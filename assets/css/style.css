@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+
+#notice_board {
+  height: 350px;
+}
+
+.dept_logo {
+  height: auto;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.ticker {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+}
+.news {
+  width: 76%;
+  background: #cc4444;
+  padding: 0 2%;
+}
+.title {
+  width: 20%;
+  text-align: center;
+  background: #c81c1c;
+  position: relative;
+}
+.title:after {
+  position: absolute;
+  content: "";
+  right: -18%;
+  border-left: 20px solid #c81c1c;
+  border-top: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 21px solid transparent;
+  top: 0px;
+}
+.title h5 {
+  font-size: 18px;
+  margin: 8% 0;
+}
+.news marquee {
+  font-size: 18px;
+  margin-top: 12px;
+}
+.news-content p {
+  margin-right: 41px;
+  display: inline;
+}
+
+
+.college_color{
+    color: #fff;
+    background-color: #800000;
+}
+
+.scroll {
+  height: 900px;
+  overflow: scroll;
+  animation: scroll 20s linear infinite;
+}
+
+@media only screen and (max-width: 600px) {
+    .title h5 {
+        font-size: 15px;
+        margin: 8% 0;
+    }
+
+}
+
